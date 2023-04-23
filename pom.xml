@@ -12,7 +12,7 @@
 
     <groupId>io.github.embedded-middleware</groupId>
     <artifactId>embedded-huaweicloud-parent</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <packaging>pom</packaging>
     <modules>
         <module>embedded-huaweicloud-aom-rest-api</module>
@@ -25,6 +25,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <src.dir>src/main/java</src.dir>
         <!-- dependency -->
+        <huaweicloud-codec.version>0.0.1</huaweicloud-codec.version>
         <lombok.version>1.18.26</lombok.version>
         <!-- plugin -->
         <compiler-plugin.version>3.10.1</compiler-plugin.version>

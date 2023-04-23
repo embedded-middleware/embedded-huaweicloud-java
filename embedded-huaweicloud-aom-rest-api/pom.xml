@@ -6,7 +6,7 @@
     <parent>
         <groupId>io.github.embedded-middleware</groupId>
         <artifactId>embedded-huaweicloud-parent</artifactId>
-        <version>0.0.1</version>
+        <version>0.0.2</version>
     </parent>
 
     <artifactId>embedded-huaweicloud-aom-rest-api</artifactId>
@@ -17,12 +17,9 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-annotations</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>jakarta.validation</groupId>
-            <artifactId>jakarta.validation-api</artifactId>
+            <groupId>io.github.protocol-laboratory</groupId>
+            <artifactId>huaweicloud-codec-aom</artifactId>
+            <version>${huaweicloud-codec.version}</version>
         </dependency>
     </dependencies>
 

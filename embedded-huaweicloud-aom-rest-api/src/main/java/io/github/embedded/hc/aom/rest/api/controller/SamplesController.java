@@ -1,8 +1,8 @@
 package io.github.embedded.hc.aom.rest.api.controller;
 
 import io.github.embedded.hc.aom.rest.api.delegate.SamplesDelegate;
-import io.github.embedded.hc.aom.rest.api.model.ListSamplesRequest;
-import io.github.embedded.hc.aom.rest.api.model.ListSamplesResp;
+import io.github.protocol.codec.hc.aom.ListSamplesReq;
+import io.github.protocol.codec.hc.aom.ListSamplesResp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,7 +22,7 @@ public class SamplesController {
 
     @PostMapping(value = "/{project_id}/samples")
     public ResponseEntity<ListSamplesResp> listSamples(@PathVariable("project_id") String projectId,
-                                                       @RequestBody ListSamplesRequest listSamplesRequest) {
-        return this.samplesDelegate.listSamples(projectId, listSamplesRequest);
+                                                       @RequestBody ListSamplesReq listSamplesReq) {
+        return this.samplesDelegate.listSamples(projectId, listSamplesReq);
     }
 }
