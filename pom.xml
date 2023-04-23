@@ -25,6 +25,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <src.dir>src/main/java</src.dir>
         <!-- dependency -->
+        <huaweicloud-codec.version>0.0.1</huaweicloud-codec.version>
         <lombok.version>1.18.26</lombok.version>
         <!-- plugin -->
         <compiler-plugin.version>3.10.1</compiler-plugin.version>
